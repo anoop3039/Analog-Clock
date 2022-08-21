@@ -1,0 +1,98 @@
+
+*,*::before,*::after{
+    box-sizing: border-box;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+body{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color:lightblue;
+}
+
+.clock{
+   
+    width: 400px;
+    height: 400px;
+    position:relative;
+    border-radius: 50%;
+    background-color: white;
+    border: 2px solid black;
+    
+    
+}
+
+.clock .number{
+ 
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  
+
+}
+
+
+.clock .number1{rotate: 30deg;}
+.clock .number2{rotate: 60deg;}
+.clock .number3{rotate: 90deg;}
+.clock .number4{rotate: 120deg;}
+.clock .number5{rotate: 150deg;}
+.clock .number6{rotate: 180deg;}
+.clock .number7{rotate: 210deg;}
+.clock .number8{rotate: 240deg;}
+.clock .number9{rotate: 270deg;}
+.clock .number10{rotate: 300deg;}
+.clock .number11{rotate: 330deg;}
+.clock .number12{rotate: 360deg;}
+
+
+.clock .hand{
+  position: absolute;
+  bottom: 50%;
+  left: 50%;
+  background-color: black;
+  transform: translateX(-50%);
+  transform-origin: bottom;
+  border: 0.5px solid white;
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+  z-index: 10;
+}
+
+
+
+.clock .sec{
+  width: 0.05in;
+  height: 50%;
+  
+  
+   
+}
+
+.clock .min {
+  width: 0.06in;
+  height: 45%;
+  
+  
+}
+
+.clock .hour {
+  width: 0.1in;
+  height: 38%;
+  
+}
+
+.dot{
+  height: 20px;
+  width: 20px;
+  left: 50%;
+  top: 50%;
+  background-color: black;
+  border-radius: 50%;
+ z-index: 10;
+  position: absolute;
+  transform: translate(-50%,-50%);
+}
